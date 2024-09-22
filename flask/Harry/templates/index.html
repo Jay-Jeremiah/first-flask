@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+       
+        .body button{
+            align-items: center;
+            justify-content: center;
+            padding: 7px 5px;
+            margin: 12px 10px;
+            margin-left: 18%;
+        }
+
+        .create{
+            border: 1px solid grey;
+            background-color: #fff;
+            padding: 7px 5px;
+            border-radius: 2px;
+        }
+
+        .nav nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 22px 10px 22px;
+            background-color: #090b6c;
+            top: 0;
+            color: white;
+        }
+
+        .nav nav h1{
+            font-size: 26px;
+            cursor: pointer;
+            background-color: grey;
+        }
+
+        .nav nav a{
+            text-decoration: none;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
+
+        .nav nav a:hover{
+            background-color: #406be0;
+            opacity: 0.8;
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <h2 id="head">HKJ</h2>
+            <a href="/">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Service</a>
+        </nav>
+    </div>
+
+    <div class="body">
+        <form>
+            <h1>WELCOME TO MY APP</h1>
+            <button type="submit" class="create" onclick="openPage()">Create Account</button>
+            <button type="submit" class="sign">Sign In</button>
+        </form>
+    </div>
+    <script>
+        function openPage(){
+            window.location.href = "register.html"
+        }
+    </script>
+</body>
+</html>
